@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+:root {
+    --pos: #000;
+    --neg: #eee;
+    --unit: 321px;
+    --tilt: 45deg;
+}
+html {
+    background-color: var(--neg) !important;
+    scroll-behavior: smooth;
+    position: relative;
+    top: 35%;
+}
+body {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    font-family: Oswald;
+    overflow: visible;
+    
+}
+.square {
+    outline: 0px solid var(--pos);
+}
+.square {
+    position: absolute;
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 150px;
+    height: 150px;
+    outline: 10px solid var(--pos);
+    outline-offset: 10px;
+    margin: 100px;
+    gap: 0px;
+    transition: all 0.5s;
+    translate: -50% -50%;
+}
+.square:hover, .square:focus {
+    transform: scale(1.1, 1.1);
+    gap: 4px;
+    box-shadow: 0px 0px 20px var(--pos);
+    outline-offset: 30px;
+    outline-width: 1px;
+} 
+.square :nth-child(32)
+{
+    border-radius: 50%;
+    content: "-";
+}
+.square div {
+    transition: all 0.5s;
+}
+.square div:hover{
+    transform: scale(0.75, 0.75);
+}
+._0 {
+    background-color: transparent;
+    color: var(--pos);
+}
+._1 {
+    background-color: var(--pos);
+    box-shadow: 0px 0px 15px var(--pos);
+    color: black;
+}
+#main { 
+    --pos: #1248; 
+    --shine-rad: 2500px;
+    font-size: 20px; 
+    font-weight: 600;  
+    width: 300px; 
+    height: 300px; 
+    outline-style: outset;
+}
+#main div._1 {animation: shine 3s;}
+#hi { 
+    --pos: #416c6578; 
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    outline-style: dotted;
+}
+#cat {
+    --pos: #416e6479;
+    rotate: var(--tilt);
+    outline-style: dashed;
+}
+#huh {
+    --pos: #424d43;
+}
+#oh {
+    --pos: #414d4d4d;
+}
+
+#pink 
+{ 
+    --pos: #e6a;
+    --shine-rad: 100px;
+    width: 250px;
+    height: 250px;
+}
+#pink div._1{
+    animation: shine 2s;
+}
+@keyframes shine {
+    from { border-radius: 50%; outline-offset: 0px; outline: 10px solid var(--pos);}
+    to { border-radius:0%; outline-offset: var(--shine-rad); outline: 0px solid var(--pos);}
+}
+#hello3F {
+    --pos: #7474796c;
+}
+#unfair {
+    --pos: #53616e64;
+    rotate: var(--tilt);
+    outline-style: dashed;
+    top: 40px;
+    transition: all 2s;
+}
+#unfair:hover, #unfair:focus {
+    box-shadow: 0px 0px 200px #900, 0px 0px 200px #900, 0px 0px 200px #900;
+    transform: scale(1.3, 1.3);
+    --pos: #900;
+}
+#orange 
+{ 
+    --pos: #b409; 
+    rotate: var(--tilt); 
+    outline-width: 7.5px;
+    outline-style: dashed;
+}
+#orange div._1 {
+    box-shadow: none;
+    transform: none;
+}
+#orange:hover, #orange:focus {
+    transform: none;
+    box-shadow: none;
+    gap: 0px;
+    outline-offset: 10px;
+}
+#bye 
+{ 
+    --pos: #f00; 
+    rotate: var(--tilt);
+    outline-width: 7.5px;
+    outline-style: dashed;
+}
+
+
+#first_t { }
+#firstest_t {}
+#last_t {}
+#cat_t {}  
+#lastest_t {}
+
+.lost {
+
+}
